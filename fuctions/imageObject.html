@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function my()
+        {
+           var img = document.getElementById("f1");
+           //this is comes as object
+           window.alert(img);
+           //accesing width attribute
+           document.write('width is :'+img.width)
+
+           //perimeter of the picture
+           var p = img.height + img.width;
+
+           document.write('<br>perimeter:'+ p);
+        }
+    </script>
+</head>
+<body onload="my()">
+    <img src="./wallpaperflare.com_wallpaper.jpg" alt="f1car" id="f1"/>
+</body>
+</html>
