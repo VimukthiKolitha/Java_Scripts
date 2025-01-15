@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function my()
+        {
+            var x = document.getElementById('name');
+            var y = document.getElementById('lname');
+            //text box value
+            document.write(x.value +" " + y.value);
+        }
+    </script>
+</head>
+<body>
+    <label>first name</label>
+    <input type="text" id="name"/>
+    <label>last name</label>
+    <input type="text" id="lname" />
+    <input type="button" value="ok" onclick="my()"/>
+</body>
+</html>
