@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function my()
+        {
+            var x = document.getElementById('num1');
+            var y = document.getElementById('num2');
+            //text turn in to int
+            var s = window.parseInt(x.value) + window.parseInt(y.value);
+            document.write(s);
+        }
+    </script>
+</head>
+<body>
+    <label>first number</label>
+    <input type="text" id="num1"/>
+    <label>last second number</label>
+    <input type="text" id="num2" />
+    <input type="button" value="ok" onclick="my()"/>
+</body>
+</html>
