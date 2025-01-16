@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hellow()
+        {
+           var num = document.getElementById('width').value;
+           document.getElementById('box').style.height = num+'px';
+           var num2 = document.getElementById('height').value;
+           document.getElementById('box').style.width = num2+'px'
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="width"/>
+    <input type="number" id="height"/>
+    <input type="button" onclick="hellow()"  value="ok" />
+
+
+    <div id="box"  style="background-color: black;"></div>
+</body>
+</html>
