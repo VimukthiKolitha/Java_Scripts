@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addName()
+        {
+            var n = document.getElementById('names').value;
+            document.getElementById('print').innerHTML +=n + "<br><br>";
+        }
+    </script>
+</head>
+<body>
+    <label>Enter names</label>
+    <input type="text" id="names"/>
+    <input type="button"  value="ok" onclick="addName()"/>
+    <div id="print"></div>
+</body>
+</html>
