@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var x = 100; //this is global variable (can access any function)
+        var i = 300;
+        function test1()
+        {
+          const i = 20;//this is local variable(can access this function only)
+
+          window.alert(i);
+           //display global variable  and local variable with same variable name
+           //display global var
+          window.alert(this.i);
+          
+        }
+        function test2()
+        {
+          window.alert(x);
+        }
+
+        test1();
+        test2();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
