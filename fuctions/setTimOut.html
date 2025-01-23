@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test1()
+        {
+             window.alert('hellow')
+             
+             //test2 function run after 2 sec
+             window.setTimeout(test2,2000);
+        }
+        function test2()
+        {
+            window.alert('hellow 2')
+            test3()
+        }
+        function test3()
+        {
+            window.alert('hellow 3')
+        }
+
+        //calling js functions without any event
+        test1();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
