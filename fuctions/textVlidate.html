@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function text()
+        {
+            var word = document.getElementById('tex').value;
+
+            for(var j = 0; j < word.length;j++)
+              {
+                var charac = word.charAt(j);
+
+                //check word have other values
+                if(charac < 'a' || charac > 'z')
+              {
+                window.alert('invalid');
+
+                break;
+              }
+              }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="tex" placeholder="Enter text"/>
+    <input type="button" value="OK" onclick="text()"/>
+</body>
+</html>
